@@ -1605,7 +1605,7 @@ property.
 local Model = require("lapis.db.model").Model
 local Posts = Model:extend("posts", {
   relations = {
-    {"users", belongs_to = "Users"},
+    {"user", belongs_to = "Users"},
     {"posts", has_many = "Tags"}
   }
 })
